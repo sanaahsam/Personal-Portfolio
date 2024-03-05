@@ -49,8 +49,6 @@ Feel free to customize the content and styling to make this portfolio truly your
 Contributions
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
-License
 
-This project is licensed under the MIT License.
 
 Explore, connect, and enjoy your visit! 🌟
