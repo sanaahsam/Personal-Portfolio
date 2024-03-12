@@ -12,7 +12,7 @@ const HomeEle = () => {
         </div>
         <div className="paragraph">
           <p>
-            A beginner Full Stack Developer eager to explore the world of web
+            A beginner MERN Stack Developer eager to explore the world of web
             development.
           </p>
         </div>

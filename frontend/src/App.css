@@ -3,16 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 *{
   padding: 0;
+  box-sizing: border-box;
   margin: 0;
   
 }
 
 
 
+
 header{ 
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 75px;
+  height: 85px;
   background: #fff;
   box-shadow: 0 10px 100px rgba(0,0,0,0.1);
   position: fixed;
@@ -52,6 +54,7 @@ header{
 
 .logoname a:hover{
   color: #E30022;
+  cursor: pointer;
 }
 
 .main_content{
@@ -82,8 +85,8 @@ header{
 /* contact side bar*/
 
 .sidebar{
-  height: 250px;
-  width: 50px;
+  height: 270px;
+  width: 60px;
   
   display: flex;
   padding: 3px;
@@ -231,7 +234,7 @@ header{
 .about_content{
   margin-top: 60px;
   display: grid;
-  padding-left: 50px;
+  padding-left: 60px;
   /*max-width: 90%;*/
   grid-template-columns: 1.2fr 1.2fr;
   grid-gap: 10rem;
@@ -377,27 +380,31 @@ header{
 
 .project .project_content{
   
-  min-width: 90%;
-  padding: 10px;
+  width: 90%;
+  
   min-height: 70vh;
+  
   display: flex;
   flex-wrap: wrap;
 }
 
 .project_card{
-  height: 80%;
-  max-width: 350px;
+  height: 400px;
+  width: 400px;
   display: flex;
   padding: 20px;
   align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;                         
-  margin: 25px;
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-left: 5px;
   border-radius: 10px;
   background-color: #d8d5d5;
 }
 
 .project_card img{
-  width: 100%;
+  width: 360px;
   margin-top: 1rem;
   border-radius: 15px;
 }
@@ -410,8 +417,8 @@ header{
   margin-bottom: 30px;
 }
 .project_card button{
-  height: 50px;
-  width: 40%;
+  height: 40px;
+  width: 200px;
   text-align: center;
   cursor: pointer;
   font-weight: bolder;
@@ -555,46 +562,41 @@ form textarea{
 /*-----------------footer--------------------*/
 
 footer{
-  height: 270px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   color: white;
- 
+  width: 100%;
+  align-items: center;
+  padding-top: 30px;
   background-color: #000;
-  padding: 50px;
+  
+}
+.footer-container{
+  width: 90%;
+  
 }
 .foot-head{
   margin-bottom: 20px;
-  
-  width: 90%;
   height: 100px;
 }
 
 .foot-head h1{
-  margin-left: 5px;
+  margin-bottom: 20px;
   font-family: "League Spartan", sans-serif;
   font-size: 2.2rem;
-  
   letter-spacing: 0.5rem;
 }
 .footer-sidebar{
-   margin-top: 15px;
-    height: 30px;
+   margin-top: 25px;
+    height: 40px;
     width: 300px;
     position: none;
     display: flex;
-
     
-   
-    padding: .5rem;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
-  }
-
-  .footer-sidebar .foot-iconn{
-    justify-content: space-between;
-    
     
   }
   .foot-iconn a{
@@ -618,13 +620,15 @@ footer{
    justify-content: space-between;
   }
 
+  
+
   .menu li:hover{
     color: #E30022;
   }
   
   .menu li{
     list-style: none;
-    padding: 20px;
+    margin-top: 30px;
     font-size: 1.5rem;
   }
   footer .line{
@@ -642,7 +646,7 @@ footer{
     font-family: "Source Sans 3", sans-serif;
     border-top: 2px solid #eee;
     border-radius: 2px;
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
     width: 90%;
     font-size: 1rem;
@@ -665,9 +669,9 @@ footer{
   .success-message {
     
     
-    width: 85%;
+    width: 90%;
     border-radius: 5px;
-    height: 30px;
+    height: 40px;
     margin-bottom: 30px;
     font-size: 1.3rem;
     font-family: "League Spartan", sans-serif;
@@ -675,6 +679,7 @@ footer{
     background-color: #4CAF50;
     color: white;
     text-align: center;
+    font-weight: bold;
 
     padding: 10px; 
   }
@@ -684,9 +689,8 @@ footer{
 header #icon{
   margin:  auto 0;
   display: none;
-  margin-right: 40px;
-  margin-top: 20px;
-  
+  margin-right: 30px;
+  margin-top: 13px;
   cursor: pointer;
 }
 
@@ -761,12 +765,11 @@ header #icon .bar3{
 
 
 /*-----------------FOR MOBILEE---------------------*/
-@media only screen and  (max-width: 600px) and (min-width:300px)  {
+@media  (max-width: 450px)  {
 
   /*----------------navbar--------------------*/
   header{
-    padding: 0;
-    margin: 0;
+    height: 80px;
   }
   .main_content{
     display: none;
@@ -793,23 +796,29 @@ header #icon .bar3{
   /*---------------home section---------------------*/
   .introduction{
     
-    top: 50%;
+    top: 65%;
   }
   .heading{
     font-size: 1.5rem;
+    box-sizing: border-box;
     background-color: #F1F1F1;
   }
   .paragraph{
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 40px;
     width: 90%;
+    margin-bottom: 30px;
     background-color: #F1F1F1;
   }
-  .introduction .btn{
+  .introduction .btn-main{
     width: 50%;
     margin-top: 30px;
-    height: 45px;
-    line-height: 3rem;
+    height: 55px;
+  
+  }
+
+  .btn a{
+    line-height: 1rem;
   }
 
   /*---------------------about section---------------*/
@@ -829,29 +838,31 @@ header #icon .bar3{
   }
 
   .about_content{
-    
+    gap: 0;
     display: flex;
     width: 100%;
+    padding-left: 20px;
     flex-direction: column;
   }
 
   .about_content-main{
     
     display: flex;
-    
-    padding: 10px;
+    height: 800px;
+    padding: 0;
     flex-direction: column;
   }
 
   .about_content-main h3{
     font-size: 1.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: "League Spartan", sans-serif;
     letter-spacing: 0;
   }
 
   .about_content-detail{
     padding: 5px;
+    
   }
 
   .about_content-detail p{
@@ -867,18 +878,20 @@ header #icon .bar3{
   .about_content-main button{
     width:150px;
     font-size: 1rem;
-    height: 40px;
+    height: 50px;
   }
 
   .about_content-skills{
-    padding: 10px;
-    margin-top: -5rem;
+    
+   margin-top: 40px;
     width: 90%;
+    
   }
   
   .about_content-skills h3{
     font-size: 2rem;
     
+    margin-top: 1.2rem;
     font-family: "League Spartan", sans-serif;
     margin-bottom: 2.3rem;
   }
@@ -892,7 +905,9 @@ header #icon .bar3{
   /*-----------project---------------*/
   .project{
     background-color: #F1F1F1;
-    padding: 10px;
+    padding: 0;
+    align-items: center;
+    display: flex;
     background-image: url(photo1.png);
     background-size: contain;
     
@@ -910,6 +925,11 @@ header #icon .bar3{
     letter-spacing: 1px;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .project_card img{
+    width: 250px;
+    margin-top: 1rem;
+    border-radius: 15px;
   }
   
   .project_head-line{
@@ -932,32 +952,31 @@ header #icon .bar3{
   
   .project .project_content{
   
-    
+    width: 100%;
     padding: 5px;
     min-height: 70vh;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
-  
   .project_card{
-    height: 80%;
-    width: 16rem;
+    height:310px;
+    width: 290px;
     display: flex;
-    padding: 15px;
+    margin-left: 10px;
+    margin-right: 0;
     align-items: center;
     flex-direction: column;                         
-    margin: 25px;
+    margin-bottom: 20px;
     border-radius: 10px;
     background-color: #d8d5d5;
   }
-  
-  
   
   .project_card h3{
     margin-top: 20px;
     font-family: "League Spartan", sans-serif;
     letter-spacing: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
   }
   .project_card button{
@@ -1008,25 +1027,43 @@ header #icon .bar3{
   }
 
   form input{
-    width: 80%;
+    width: 90%;
     height: 10px;
     font-size: 0.9rem;
   }
 
   form textarea{
-    width: 80%;
+    width: 90%;
   }
   
   form .contact-btn button{
-    width: 93%;
+    width: 90%;
     height: 50px;
+  }
+  .success-message {
+    
+    
+    width: 90%;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0.1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+    padding: 10px; 
   }
   
   .mobile-main_content{
-    display: none;
+    
     position: absolute;
     top: 10;
     right: 0;
+    
     padding:20px;
     height: 50vh;
     background-color: #E30022;
@@ -1039,20 +1076,22 @@ header #icon .bar3{
      margin-left: 10px;
      height: 50px;
      width: 90%;
+     padding: 0;
      
-     border: 5px solid white;
-     border-radius: 15px;
+     margin-bottom: 40px;
+     border: 2px solid white;
+     border-radius: 10px;
      letter-spacing: 0.3rem;
      font-size: 1.2rem;
      
    }
-
-   footer .menu{
-    flex-wrap: wrap;
-    line-height: 0;
+   footer{
+    height: 300px;
+   
    }
    footer .menu li{
     font-size: 0.6rem;
+    margin-right: 20px;
     color: white;
    }
 
@@ -1070,24 +1109,24 @@ header #icon .bar3{
    }
 }
 
-
-
-/*----for ipad---------------------------------*/
-
-@media only screen and  (max-width: 966px) and (min-width: 601px) {
-  /*----------------navbar--------------------*/
+@media (min-width: 451px) and (max-width:650px){
   header{
-    padding: 0;
-    margin: 0;
+    height: 80px;
   }
   .main_content{
     display: none;
   }
-  .logoname{
-    width: 50%;
+  .logoname a{
+    font-size: 1rem;
+  }
+  
+  .header_content img{
+    height: 40px;
+    border-radius: 40px;
+    width: 40px;
   }
   .header_content p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   header #icon{
     display: block;
@@ -1101,66 +1140,70 @@ header #icon .bar3{
     
     top: 50%;
   }
-  .backdrop{
-    background-image: url(photo1.png);
-    background-size: auto;
-    
-  }
   .heading{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
     background-color: #F1F1F1;
   }
   .paragraph{
-    font-size: 1.5rem;
-    margin-top: 10px;
-    width: 85%;
+    font-size: 1rem;
+    margin-top: 40px;
+    width: 90%;
+    margin-bottom: 30px;
     background-color: #F1F1F1;
   }
-  
+  .introduction .btn-main{
+    width: 50%;
+    margin-top: 30px;
+    height: 55px;
+   line-height: 2;
+  }
 
+  .btn a{
+    line-height: 1rem;
+  }
   /*---------------------about section---------------*/
   .about{
     padding: 5px;
-    
   }
   .about_head h1{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 15px;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
   }
 
   .about_head p{
-    width: 80%;
-    letter-spacing: 0.3;
-    line-height: 2.2rem;
-    font-size: 1.1rem;
+    width: 90%;
+    letter-spacing: 0;
+    font-size: 1rem;
   }
 
   .about_content{
-    padding: 20px;
+    gap: 0;
     display: flex;
-    
+    width: 100%;
+    padding-left: 20px;
     flex-direction: column;
   }
 
   .about_content-main{
     
     display: flex;
-    height: 200px;
-    margin-bottom: 50px;
-    padding: 10px;
+    height: 650px;
+    padding: 0;
     flex-direction: column;
   }
 
   .about_content-main h3{
     font-size: 1.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: "League Spartan", sans-serif;
     letter-spacing: 0;
   }
 
   .about_content-detail{
     padding: 5px;
+    
   }
 
   .about_content-detail p{
@@ -1176,16 +1219,20 @@ header #icon .bar3{
   .about_content-main button{
     width:150px;
     font-size: 1rem;
-    height: 40px;
+    height: 50px;
   }
 
   .about_content-skills{
-    padding: 10px;
-   
+    
+   margin-top: 40px;
     width: 90%;
+    
   }
+  
   .about_content-skills h3{
     font-size: 2rem;
+    
+    margin-top: 1.2rem;
     font-family: "League Spartan", sans-serif;
     margin-bottom: 2.3rem;
   }
@@ -1195,12 +1242,15 @@ header #icon .bar3{
     margin-right: 1.5rem;
     font-size: 0.9rem;
   }
-
-   /*-----------project---------------*/
-   .project{
+  
+  /*-----------project---------------*/
+  .project{
     background-color: #F1F1F1;
+    padding: 0;
+    align-items: center;
+    display: flex;
     background-image: url(photo1.png);
-    background-size: auto;
+    background-size: contain;
     
   }
   .project_head{
@@ -1212,66 +1262,71 @@ header #icon .bar3{
   }
   
   .project_head h1{
-    font-size: 3rem;
-    letter-spacing: 1.4px;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .project_card img{
+    width: 350px;
+    margin-top: 1rem;
+    border-radius: 15px;
   }
   
   .project_head-line{
     margin-top: 2px;
     margin-bottom: 2px;
-    height: 7px;
-    width: 3rem;
+    height: 5px;
+    width: 2rem;
   }
   
   
   .project_head p{
     margin-top: 10px;
-    letter-spacing: 0.2;
+    letter-spacing: 0;
     line-height: 1.5;
     height: 40px;
-    width: 100%;
-    font-size: 1.4rem;
+    width: 90%;
+    font-size: 1.1rem;
   }
   
   
   .project .project_content{
   
-    
+    width: 100%;
     padding: 5px;
     min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
   }
-  
   .project_card{
-    height: 80%;
-    width: 250px;
+    height:400px;
+    width: 400px;
     display: flex;
-    padding: 15px;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-right: 0;
     align-items: center;
     flex-direction: column;                         
-    margin: 25px;
+    margin-bottom: 20px;
     border-radius: 10px;
     background-color: #d8d5d5;
   }
-  
-  
   
   .project_card h3{
     margin-top: 20px;
     font-family: "League Spartan", sans-serif;
     letter-spacing: 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
   }
   .project_card button{
-    height: 40px;
-    width: 55%;
+    height: 50px;
+    width: 350px;
     text-align: center;
     cursor: pointer;
     font-weight: bolder;
+    
     border-radius: 5px;
     background-color: #E30022;
     border: 2px solid #e6e2e2;
@@ -1279,29 +1334,28 @@ header #icon .bar3{
   }
   /*project button*/
   .project_card a{
-    letter-spacing: 0.6px;
-    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
   }
 
   /*--------------contact area-------------*/
   .contact{
-    background-image: none;
-    background-color: #F1F1F1;
+    background-image: url(photo2.png);
   }
   .contact_head{
     height: 200px;
   }
   .contact h1{
-    font-size: 3rem;
-    letter-spacing: 0.2;
+    font-size: 2rem;
+    letter-spacing: 0;
   }
   .contact_head-line{
-    height: 5px;
+    height: 4px;
 
   }
   .contact_head p{
-    width: 80%;
-    font-size: 1.3rem;
+    width: 90%;
+    font-size: 1rem;
     letter-spacing: 0;
   }
   
@@ -1325,47 +1379,1164 @@ header #icon .bar3{
   }
   
   form .contact-btn button{
-    width: 97%;
+    width: 90%;
     height: 50px;
   }
   
-  footer .menu li{
-    font-size: 1rem;
+  .mobile-main_content{
+    
+    position: absolute;
+    top: 10;
+    right: 0;
+    
+    padding:20px;
+    height: 50vh;
+    background-color: #E30022;
+    height: calc(100vh- 50px);
+    width: 90%;
   }
+  
+  .mobile-main_content li{
+     list-style: none;
+     margin-left: 10px;
+     height: 50px;
+     width: 90%;
+     padding: 0;
+     
+     margin-bottom: 40px;
+     border: 2px solid white;
+     border-radius: 10px;
+     letter-spacing: 0.3rem;
+     font-size: 1.2rem;
+     
+   }
+   footer{
+    height: 300px;
+   
+   }
+   footer .menu li{
+    font-size: 0.8rem;
+    margin-right: 20px;
+    color: white;
+   }
+
+   .menu li a:hover{
+    color: #E30022;
+   }
+
+   footer .copyright{
+    width: 95%;
+    font-size: 0.7rem;
+   }
+
+   .copyright a:hover{
+    color: #E30022;
+   }
 
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1280px) {
+/*----for ipad---------------------------------*/
+
+@media only screen and  (min-width: 651px) and (max-width: 825px) {
+  header{
+    height: 80px;
+  }
+  .main_content{
+    display: none;
+  }
+  .logoname{
+    width: 50%;
+  }
+  .logoname a{
+    font-size: 1.4rem;
+  }
+  
+  .header_content img{
+    height: 50px;
+    border-radius: 40px;
+    width: 50px;
+  }
+  .header_content p{
+    font-size: 1rem;
+  }
+  header #icon{
+    display: block;
+  }
+  /*-------------------sidebar----------------------*/
+  .sidebar{
+    display: none;
+  }
+  /*---------------home section---------------------*/
+  .introduction{
+    
+    top: 50%;
+  }
+  .heading{
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    background-color: #F1F1F1;
+  }
+  .paragraph{
+    font-size: 1rem;
+    margin-top: 40px;
+    width: 90%;
+    margin-bottom: 30px;
+    background-color: #F1F1F1;
+  }
+  .introduction .btn-main{
+    width: 250px;
+    margin-top: 30px;
+    height: 55px;
    
+  }
+
+  .btn a{
+    line-height: 1rem;
+  }
+  /*---------------------about section---------------*/
+  .about{
+    padding: 5px;
+  }
+  .about_head h1{
+    font-size: 2rem;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
+  }
+
+  .about_head p{
+    width: 90%;
+    letter-spacing: 0;
+    font-size: 1rem;
+  }
+
+  .about_content{
+    gap: 50px;
+    
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .about_content-main{
+    
+    display: flex;
+    height: 900px;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .about_content-main h3{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+  }
+
+  .about_content-detail{
+    padding: 5px;
+    
+    
+  }
+
+  .about_content-detail p{
+    font-size: 1.2rem;
+    color: #666;
+    width: 90%;
+    font-family: "Source Sans 3", sans-serif;
+    
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+
+  .about_content-main button{
+    width:150px;
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .about_content-skills{
+    
+   
+    width: 90%;
+    
+  }
+  
+  .about_content-skills h3{
+    font-size: 2rem;
+    
+    
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 2.3rem;
+  }
+
+  .skills_skill{
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /*-----------project---------------*/
+  .project{
+    background-color: #F1F1F1;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    background-image: url(photo1.png);
+    background-size: contain;
+    
+  }
+  .project_head{
+    width: 400px;
+    height: 120px;
+    margin-bottom: 1.4rem;
+    background-color:#F1F1F1;
+    
+  }
+  
+  .project_head h1{
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .project_card img{
+    width: 350px;
+    margin-top: 1rem;
+    border-radius: 15px;
+  }
+  
+  .project_head-line{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 5px;
+    width: 2rem;
+  }
+  
+  
+  .project_head p{
+    margin-top: 10px;
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+    height: 40px;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  
+  
+  .project .project_content{
+  
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project_card{
+    height:400px;
+    width: 400px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: center;
+    flex-direction: column;                         
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #d8d5d5;
+  }
+  
+  .project_card h3{
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .project_card button{
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    
+    border-radius: 5px;
+    background-color: #E30022;
+    border: 2px solid #e6e2e2;
+    margin-bottom: 0.9rem;
+  }
+  /*project button*/
+  .project_card a{
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  /*--------------contact area-------------*/
+  .contact{
+    background-image: url(photo2.png);
+  }
+  .contact_head{
+    height: 200px;
+  }
+  .contact h1{
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .contact_head-line{
+    height: 4px;
+
+  }
+  .contact_head p{
+    width: 90%;
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  
+  .form{
+    width: 90%;
+  
+  }
+
+  form label{
+    font-size: 1.2rem;
+  }
+
+  form input{
+    width: 90%;
+    height: 10px;
+    font-size: 0.9rem;
+  }
+
+  form textarea{
+    width: 90%;
+  }
+  
+  form .contact-btn button{
+    width: 90%;
+    height: 50px;
+  }
+  
+  .mobile-main_content{
+    
+    position: absolute;
+    top: 10;
+    right: 0;
+    width: 400px;
+    padding:20px;
+    height: 50vh;
+    background-color: #E30022;
+    height: calc(100vh- 50px);
+    
+  }
+  
+  .mobile-main_content li{
+     list-style: none;
+     margin-left: 10px;
+     height: 50px;
+     width: 90%;
+     padding: 0;
+     
+     margin-bottom: 40px;
+     border: 2px solid white;
+     border-radius: 10px;
+     letter-spacing: 0.3rem;
+     font-size: 1.2rem;
+     
+   }
+   footer{
+    height: 340px;
+    
+   }
+   .footer-container{
+    margin-top: 40px;
+   }
+   footer .menu li{
+    font-size: 0.8rem;
+    margin-right: 20px;
+    color: white;
+   }
+
+   .menu li a:hover{
+    color: #E30022;
+   }
+
+   footer .copyright{
+    width: 95%;
+    font-size: 0.7rem;
+   }
+
+   .copyright a:hover{
+    color: #E30022;
+   }
+}
+
+@media only screen and (min-width: 826px) and (max-width: 890px) {
+   .sidebar{
+    display: none;
+   }
   .backdrop{
     background-image: url(photo1.png);
   }
   .logoname {
      width: 50%;
   }
+  
   .menu li{
     font-size: 1rem;
   }
   .introduction{
     background-color: #F1F1F1;
-    width: 70%;
+    width: 90%;
+    height: 550px;
+  }
+  .introduction .heading{
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  .introduction .paragraph{
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  .about{
+    padding: 10px;
+  }
+  .about_head h1{
+    font-size: 2rem;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
+  }
+
+  .about_head p{
+    width: 90%;
+    letter-spacing: 0;
+    font-size: 1rem;
+  }
+
+  .about_content{
+    gap: 50px;
+    
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .about_content-main{
+    
+    display: flex;
+    height: 900px;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .about_content-main h3{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+  }
+
+  .about_content-detail{
+    padding: 5px;
+    
+    
+  }
+
+  .about_content-detail p{
+    font-size: 1.2rem;
+    color: #666;
+    width: 90%;
+    font-family: "Source Sans 3", sans-serif;
+    
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+
+  .about_content-main button{
+    width:150px;
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .about_content-skills{
+    
+   
+    width: 90%;
+    
   }
   
-}
+  .about_content-skills h3{
+    font-size: 2rem;
+    
+    
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 2.3rem;
+  }
 
-@media only screen and (min-width: 1524px) and (max-width: 1524px) {
+  .skills_skill{
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /*-----------project---------------*/
+  .project{
+    background-color: #F1F1F1;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    background-image: url(photo1.png);
+    background-size: contain;
+    
+  }
+  .project_head{
+    max-width: 800px;
+    height: 120px;
+    margin-bottom: 1.4rem;
+    background-color:#F1F1F1;
+    
+  }
+  
+  .project_head h1{
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .project_card img{
+    width: 350px;
+    margin-top: 1rem;
+    border-radius: 15px;
+  }
+  
+  .project_head-line{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 5px;
+    width: 2rem;
+  }
+  
+  
+  .project_head p{
+    margin-top: 10px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    height: 40px;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  
+  
+  .project .project_content{
+  
+    width: 100%;
+    padding: 5px;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project_card{
+    height:400px;
+    width: 400px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: center;
+    flex-direction: column;                         
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #d8d5d5;
+  }
+  
+  .project_card h3{
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .project_card button{
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    
+    border-radius: 5px;
+    background-color: #E30022;
+    border: 2px solid #e6e2e2;
+    margin-bottom: 0.9rem;
+  }
+  /*project button*/
+  .project_card a{
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  /*--------------contact area-------------*/
+  .contact{
+    background-image: url(photo2.png);
+  }
+  .contact_head{
+    height: 200px;
+  }
+  .contact h1{
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .contact_head-line{
+    height: 4px;
+
+  }
+  .contact_head p{
+    width: 90%;
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  
+  .form{
+    width: 90%;
+  
+  }
+
+  form label{
+    font-size: 1.2rem;
+  }
+
+  form input{
+    width: 90%;
+    height: 10px;
+    font-size: 0.9rem;
+  }
+
+  form textarea{
+    width: 90%;
+  }
+  
+  form .contact-btn button{
+    width: 90%;
+    height: 50px;
+  }
+  
+  footer{
+    height: 350px;
+    
    
-      .backdrop{
-        background-image: url(photo1.png);
-      }
-      .menu li{
-        font-size: 1rem;
-      }
-      .introduction{
-        background-color: #F1F1F1;
-        width: 70%;
-      }
+   }
+   .footer-container{
+    margin-top: 30px;
+   }
+   
 }
 
+@media  (min-width: 891px) and (max-width: 1020px) {
+   
+  .sidebar{
+    display: none;
+   }
+  .backdrop{
+    background-image: url(photo1.png);
+  }
+  .logoname {
+     width: 50%;
+  }
+  
+  .menu li{
+    font-size: 1rem;
+  }
+  .introduction{
+    background-color: #F1F1F1;
+    width: 90%;
+    height: 550px;
+  }
+  .introduction .heading{
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  .introduction .paragraph{
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  .about{
+    padding: 10px;
+  }
+  .about_head h1{
+    font-size: 2rem;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
+  }
 
+  .about_head p{
+    width: 90%;
+    letter-spacing: 0;
+    font-size: 1rem;
+  }
 
+  .about_content{
+    gap: 50px;
+    
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .about_content-main{
+    
+    display: flex;
+    height: 900px;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .about_content-main h3{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+  }
+
+  .about_content-detail{
+    padding: 5px;
+    
+    
+  }
+
+  .about_content-detail p{
+    font-size: 1.2rem;
+    color: #666;
+    width: 90%;
+    font-family: "Source Sans 3", sans-serif;
+    
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+
+  .about_content-main button{
+    width:150px;
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .about_content-skills{
+    
+   
+    width: 90%;
+    
+  }
+  
+  .about_content-skills h3{
+    font-size: 2rem;
+    
+    
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 2.3rem;
+  }
+
+  .skills_skill{
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /*-----------project---------------*/
+  .project{
+    background-color: #F1F1F1;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    background-image: url(photo1.png);
+    background-size: contain;
+    
+  }
+  .project_head{
+    width: 500px;
+    height: 120px;
+    margin-bottom: 1.4rem;
+    background-color:#F1F1F1;
+    
+  }
+  
+  .project_head h1{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .project_head p{
+    margin-top: 10px;
+    letter-spacing: 2;
+    line-height: 1.5;
+    height: 40px;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .project_head-line{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 6px;
+    width: 2rem;
+  }
+  .project_card img{
+    width: 300px;
+    margin-top: 1rem;
+    border-radius: 15px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .project .project_content{
+  
+    width: 100%;
+    padding: 5px;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project_card{
+    height:350px;
+    width: 350px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: center;
+    flex-direction: column;                         
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #d8d5d5;
+  }
+  
+  .project_card h3{
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .project_card button{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    
+    border-radius: 5px;
+    background-color: #E30022;
+    border: 2px solid #e6e2e2;
+    margin-bottom: 0.9rem;
+  }
+  /*project button*/
+  .project_card a{
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  /*--------------contact area-------------*/
+  .contact{
+    background-image: url(photo2.png);
+  }
+  .contact_head{
+    height: 200px;
+  }
+  .contact h1{
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .contact_head-line{
+    height: 4px;
+
+  }
+  .contact_head p{
+    width: 90%;
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  
+  .form{
+    width: 90%;
+  
+  }
+
+  form label{
+    font-size: 1.2rem;
+  }
+
+  form input{
+    width: 90%;
+    height: 10px;
+    font-size: 0.9rem;
+  }
+
+  form textarea{
+    width: 90%;
+  }
+  
+  form .contact-btn button{
+    width: 90%;
+    height: 50px;
+  }
+  
+  footer{
+    height: 350px;
+    
+   
+   }
+   .footer-container{
+    margin-top: 30px;
+   }
+}
+
+@media (min-width:1020px) and (max-width: 1500px)
+{
+  
+  .backdrop{
+    background-image: url(photo1.png);
+  }
+  .logoname {
+     width: 50%;
+  }
+  
+  .menu li{
+    font-size: 1rem;
+  }
+  .introduction{
+    
+    width: 80%;
+    height: 550px;
+  }
+  .introduction .heading{
+    width: 100%;
+    background-color: #F1F1F1;
+    font-size: 2.2rem;
+  }
+  .introduction .paragraph{
+    font-size: 1.2rem;
+    width: 80%;
+    background-color: #F1F1F1;
+  }
+  .about{
+    padding: 10px;
+  }
+  .about_head h1{
+    font-size: 2.1rem;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
+  }
+
+  .about_head p{
+    width: 90%;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+  }
+
+  .about_content{
+    gap: 50px;
+    
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .about_content-main{
+    
+    display: flex;
+    height: 600px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .about_content-main h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+  }
+
+  .about_content-detail{
+    padding: 5px;
+    
+    
+  }
+
+  .about_content-detail p{
+    font-size: 1.2rem;
+    color: #666;
+    width: 90%;
+    font-family: "Source Sans 3", sans-serif;
+    
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+
+  .about_content-main button{
+    width:150px;
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .about_content-skills{
+    
+   
+    width: 90%;
+    
+  }
+  
+  .about_content-skills h3{
+    font-size: 2rem;
+    
+    
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 2.3rem;
+  }
+
+  .skills_skill{
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /*-----------project---------------*/
+  .project{
+    background-color: #F1F1F1;
+    padding: 0;
+    align-items: center;
+    
+    display: flex;
+    background-image: url(photo1.png);
+    background-size: contain;
+    
+  }
+  .project_head{
+    width: 500px;
+    height: 120px;
+    margin-bottom: 1.4rem;
+    background-color:#F1F1F1;
+    
+  }
+  
+  .project_head h1{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .project_head p{
+    margin-top: 10px;
+    letter-spacing: 2;
+    line-height: 1.5;
+    height: 40px;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .project_head-line{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 6px;
+    width: 2rem;
+  }
+  .project_card img{
+    width: 300px;
+    margin-top: 1rem;
+    border-radius: 15px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .project .project_content{
+  
+    width: 100%;
+    padding: 5px;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project_card{
+    height:350px;
+    width: 350px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: center;
+    flex-direction: column;                         
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #d8d5d5;
+  }
+  
+  .project_card h3{
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .project_card button{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    
+    border-radius: 5px;
+    background-color: #E30022;
+    border: 2px solid #e6e2e2;
+    margin-bottom: 0.9rem;
+  }
+  /*project button*/
+  .project_card a{
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  /*--------------contact area-------------*/
+  .contact{
+    background-image: url(photo2.png);
+  }
+  .contact_head{
+    height: 200px;
+  }
+  .contact h1{
+    font-size: 2.5rem;
+    letter-spacing: 1;
+  }
+  .contact_head-line{
+    height: 4px;
+
+  }
+  .contact_head p{
+    width: 90%;
+    font-size: 1.2rem;
+    letter-spacing: 1;
+  }
+  
+  .form{
+    width: 90%;
+  
+  }
+
+  form label{
+    font-size: 1.2rem;
+  }
+
+  form input{
+    width: 90%;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  form textarea{
+    width: 90%;
+  }
+  
+  form .contact-btn button{
+    width: 90%;
+    height: 50px;
+  }
+}

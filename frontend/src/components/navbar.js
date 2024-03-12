@@ -23,11 +23,11 @@ const Navbar = () => {
       <div className="header_content">
         <div className="logoname" onClick={scrollToTop}>
           <img
-            src={"https://avatar.iran.liara.run/public/girl?username=yourname"} //your profile picture or avatar img link
+            src={"https://avatar.iran.liara.run/public/girl?username=sanaahsam"} //your profile picture or avatar img link
             alt="pfp"
           />
 
-          <Link to="project" smooth={true} duration={500} className="btn-main">
+          <Link to="home" smooth={true} duration={500} className="btn-main">
             Sana Ahsam
           </Link>
         </div>

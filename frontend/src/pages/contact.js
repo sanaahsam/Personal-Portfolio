@@ -12,9 +12,9 @@ const Contact = () => {
     e.preventDefault();
 
     // Emailjs Service ID, Template ID, and Public ID
-    const serviceId = "service_qgj3yz8";
-    const templateId = "template_v50nap8";
-    const publicKey = "jzbLUba9h6yrVTxKx";
+    const serviceId = "your_serviceID;"; //your service ID
+    const templateId = "your_templateId"; //your template Id
+    const publicKey = "your_public_key"; //your public key
 
     // Dynamic template params
     const templateParams = {
@@ -29,12 +29,12 @@ const Contact = () => {
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
       setSuccessMessage("Email sent successfully!");
-
-      setTimeout(() => {
-        setSuccessMessage("");
-      }, 500);
+      Setname("");
       setEmail("");
       setMessage("");
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 6000);
     } catch (error) {
       console.log("Error sending email", error);
     }
@@ -43,7 +43,7 @@ const Contact = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setSuccessMessage("");
-    }, 4000);
+    }, 6000);
 
     // Cleanup the timeout when the component is unmounted
     return () => {

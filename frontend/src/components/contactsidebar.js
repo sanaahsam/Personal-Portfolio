@@ -4,14 +4,15 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
+  faUpwork,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; // or "@fortawesome/free-regular-svg-icons"
 
 const ContactSidebar = () => {
-  const LinkedinAccountLink = ""; //your Linkedin Account Link
-  const GithubLink = ""; //your Github Account Link
-  const TwitterLink = ""; //your Twitter Account Link
-  const Email = ""; //your Email Address
+  const GithubLink = "https://github.com/sanaahsam"; //your Github Account Link
+  const LinkedinAccountLink =
+    "https://www.linkedin.com/in/sana-ahsam-738831262/"; //your Linkedin Account Link
+  const TwitterLink = "https://twitter.com/sanaahsam"; //your Twitter Account Link
+  const Upwork = "https://www.upwork.com/freelancers/~0171d8a6fc177259b2"; //your upwork Account Link
   return (
     <div className="sidebar">
       <div className="iconn">
@@ -30,8 +31,8 @@ const ContactSidebar = () => {
         </a>
       </div>
       <div className="iconn">
-        <a href={Email}>
-          <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+        <a href={Upwork}>
+          <FontAwesomeIcon icon={faUpwork} size="2xl" />
         </a>
       </div>
     </div>

@@ -19,16 +19,19 @@ const About = () => {
           <h3>Get to know me!</h3>
           <div className="about_content-detail">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              molestiae aliquid quam quae cum, beatae debitis ullam optio
-              laborum blanditiis ratione enim iusto omnis ad illo eaque!
-              Facilis, praesentium molestias.
+              Hello, I'm Sana Ahsam, a Beginner MERN stack Developer and an
+              enthusiastic learner, currently navigating the final year of my
+              BCA degree. In my journey through the dynamic field of web
+              development, I've crafted 2-3 MERN stack projects, each
+              representing a milestone in my learning curve.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              molestiae aliquid quam quae cum, beatae debitis ullam optio
-              laborum blanditiis ratione enim iusto omnis ad illo eaque!
-              Facilis, praesentium molestias.
+              As a dedicated student and developer, I thrive on challenges,
+              consistently pushing the boundaries of my skills to create
+              meaningful and innovative solutions. I am passionate about the
+              endless possibilities in the tech world and look forward to
+              contributing my expertise to future projects and collaborative
+              endeavors. If you want to Contact Me you can Contact Me anytime.
             </p>
           </div>
           <button>
